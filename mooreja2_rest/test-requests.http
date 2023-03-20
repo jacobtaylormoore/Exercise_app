@@ -1,22 +1,24 @@
 ###
-POST http://localhost:3000/movies HTTP/1.1
+POST http://localhost:3000/exercises HTTP/1.1
 content-type: application/json
 
 {
-    "title": "Sorry to Bother You",
-    "year": 2019,
-    "language": "English"
+    "name": "bench",
+    "reps": 20,
+    "weight": 200, 
+    "unit": "lbs",
+    "date": "01/01/2020"
 }
 
 ###
 GET http://localhost:3000/movies HTTP/1.1
 
 ###
-GET http://localhost:3000/movies/62101735ba85fad4d58b5197 HTTP/1.1
+GET http://localhost:3000/movies/621fb6e78f2a0ae9193efbb4 HTTP/1.1
 
 ###
 
-PUT http://localhost:3000/movies/61041b383628704ea0453c73 HTTP/1.1
+PUT http://localhost:3000/movies/621fb6e78f2a0ae9193efbb4 HTTP/1.1
 content-type: application/json
 
 {
@@ -26,7 +28,7 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/movies/61041b383628704ea0453c73 HTTP/1.1
+DELETE http://localhost:3000/movies/621fb6e78f2a0ae9193efbb4 HTTP/1.1
 
 
 ###
